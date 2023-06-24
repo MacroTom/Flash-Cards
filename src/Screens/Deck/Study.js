@@ -15,7 +15,7 @@ function Study(){
 
     if(deck){
         let content;
-        if(deck.cards.length > 2){
+        if(deck.cards.length >= 3){
             content = (
                 <Card data={deck.cards}/>
             );
@@ -33,7 +33,7 @@ function Study(){
         return (
             <section>
                 <div className="w-fit bg-light mb-4 p-3 rounded d-flex align-items-center">
-                    <p className="m-0"><Link className="text-info" to="/">Home</Link> / <span className="text-info">{deck.name} /</span><span> Study</span></p>
+                    <p className="m-0"><Link className="text-info" to="/">Home</Link> / <span className="text-info">{deck.name}</span><span> /Study</span></p>
                 </div>
 
                 <h1 className="mb-4">Study: {deck.name}</h1>

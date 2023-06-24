@@ -15,7 +15,7 @@ function Home(){
         loadDecks();
     },[]);
 
-    if(decks.length > 0){
+    if(decks.length >= 1){
         return (
             <section>
                 <div className="mb-4">
@@ -28,7 +28,7 @@ function Home(){
         );
     }
 
-    return "Loading";
+    return <div>No Decks yet...</div>;
 }
 
 export default Home;
